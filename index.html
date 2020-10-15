@@ -3467,8 +3467,11 @@
             </div>
         </div>
     </div>
-
 </div>
+<form class="search-mobile">
+    <input type="text" placeholder="Поиск">
+    <button type="submit"></button>
+</form>
 
 <!--HTML Widget code-->
 
@@ -6830,7 +6833,12 @@
 <script>
     $(document).ready(function(){
         $(".header-mobile__burger").click(function(){
-            $(".burger-menu").slideToggle();
+            $(".burger-menu").toggle();
+        });
+
+        $(".header-mobile__search").click(function(){
+            $(".search-mobile").css('display', 'flex');
+            $('.header-mobile__search svg').hide();
         });
     });
 </script>
