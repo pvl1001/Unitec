@@ -5,6 +5,10 @@
     position: relative;
 }
 
+img {
+    max-width: none;
+}
+
 .header__up-nav {
     background-color: #F1F1F1;
     display: flex;
@@ -165,6 +169,28 @@
     position: absolute;
     right: 0;
     top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    background-color: #235E8F;
+}
+
+.header-nav,
+.topbar {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.topbar nav {
+    margin-right: -10px;
+}
+
+.dropdown a {
+    color: #235E8F;
+    text-decoration: none;
 }
 
 .header-search input {

@@ -1,0 +1,163 @@
+.category-item__image-hover {
+    background: transparent;
+}
+
+.category-item .title {
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: #235E8F;
+    transition: .3s;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.category-item:not(:nth-child(4n)):before {
+    content: '';
+    display: block;
+    border-right: 1px solid #235E8F;
+    position: absolute;
+    height: calc(100% - 40px);
+    margin-top: 20px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.category-item-wrapp {
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px #F1F1F1;
+    border-radius: 5px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.category-item-wrapp .image {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.category-item-wrapp:hover .title {
+    background: #235E8F;
+    color: #fff;
+}
+
+.nasosy .page-title {
+    margin-bottom: 60px;
+}
+
+#content.nasosy {
+    padding-bottom: 60px;
+}
+
+a.category-item {
+    display: flex;
+    text-decoration: none;
+}
+
+.breadcrumb>.active, .breadcrumb>li+li:before {
+    color: #828282;
+}
+
+.product-list > .product-list__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.nasosy .page-title {
+    display: none;
+}
+
+.breadcrumb {
+    margin-bottom: 60px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #235E8F;
+}
+
+.category-item .title {
+    min-height: 45px;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .nasosy .container {
+        width: auto;
+        padding: 0;
+    }
+
+    .category-item {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    .category-item-wrapp {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        font-size: 0;
+    }
+
+    .category-item-wrapp .image {
+        margin-bottom: 0;
+        flex-grow: 1;
+        height: 150px;
+    }
+
+    .category-item-wrapp .image:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .nasosy .page-title {
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #000000;
+        padding: 10px 3px 15px !important;
+        border-bottom: 1px solid #F1F1F1 !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product-list {
+        padding: 0;
+    }
+
+    .product-list > .product-list__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .category-item:not(:nth-child(4n)):before {
+        display: none;
+    }
+
+    .category-item:not(:nth-child(2n)):before {
+        content: '';
+        display: block;
+        border-right: 1px solid #235E8F;
+        position: absolute;
+        height: calc(100% - 40px);
+        margin-top: 20px;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+    }
+}
