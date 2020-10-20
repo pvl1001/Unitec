@@ -516,7 +516,10 @@ a.btn {
     min-width: 200px;
     max-width: 200px;
     height: 100%;
-    margin-right: 40px;
+    margin-right: 20px;
+    background-color: #FBFBFB;
+    display: inline-block;
+    float: left;
 }
 
 .sidebar a {
@@ -555,14 +558,31 @@ a.btn {
 }
 
 .content {
-    display: flex;
+    display: initial;
 }
 
 .w-100 {
-    width: 100%;
+    width: calc(100% - 220px);
+    display: inline-block;
+}
+
+.wrapp-col {
+    flex-grow: 1;
+}
+
+.wrapp-col__sidebar {
+    background-color: #FBFBFB;
+}
+
+.d-flex {
+    display: flex;
 }
 
 @media (max-width: 767px) {
+
+    .w-100 {
+        width: 100%;
+    }
 
     .sidebar-nasosy {
         display: none;
@@ -813,7 +833,6 @@ a.btn {
         min-height: calc(100vh - 40px);
         padding: 0 20px;
         margin-right: 0;
-        background-color: #FBFBFB;
     }
 
     @media (max-width: 340px) {
