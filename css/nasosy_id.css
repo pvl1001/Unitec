@@ -1,0 +1,109 @@
+.nasosy-id .product-full {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+}
+
+.product-full .image {
+    width: 420px;
+    margin-top: 43px;
+    margin-right: 20px;
+    border: 0;
+}
+
+.product-full h3.product-info-title {
+    border: 0;
+    margin: 0;
+}
+
+.product-full h3.product-info-title span {
+    position: static;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #235E8F;
+    margin-bottom: 23px;
+}
+
+h1.page-title {
+    margin-bottom: 30px;
+}
+
+.product-full .image {
+    width: calc(40% - 20px);
+}
+
+.properties {
+    width: 60%;
+}
+
+.product-full .table-properties td.property-label {
+    width: auto;
+    border-right: 0;
+}
+
+.property-label {
+    padding-left: 25px !important;
+}
+
+.property-value {
+    text-align: right;
+    padding-right: 25px !important;
+}
+
+.panel {
+    margin-bottom: 0;
+}
+
+.nasosy-id .description {
+    margin-top: 53px;
+    margin-bottom: 16px;
+}
+
+.product-full h3.product-info-title span {
+    margin-bottom: 20px;
+}
+
+.nasosy-id .product-info-title .text {
+    line-height: 18px;
+}
+
+.product-full ul.documents li {
+    padding-left: 0;
+}
+
+.nasosy-id .product-full ul.documents a {
+    padding-left: 25px;
+    background: url('../img/download.svg') 0 center / 16px no-repeat;
+}
+
+.nasosy-id .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+
+    .product-full .image {
+        width: 221px;
+        margin: 0 auto;
+    }
+
+    .product-full .image {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .nasosy-id .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .properties {
+        width: 100%;
+    }
+
+    .nasosy-id h1.page-title {
+        margin-bottom: 20px;
+    }
+}
