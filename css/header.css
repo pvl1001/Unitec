@@ -564,6 +564,7 @@ a.btn {
 .w-100 {
     width: calc(100% - 220px);
     display: inline-block;
+    padding-left: 17px;
 }
 
 .wrapp-col {
@@ -578,10 +579,19 @@ a.btn {
     display: flex;
 }
 
+.brand__about .active {
+    color: #000;
+}
+
 @media (max-width: 767px) {
+
+    .wrapp-col__sidebar {
+        background-color: #fff;
+    }
 
     .w-100 {
         width: 100%;
+        padding-left: 0;
     }
 
     .sidebar-nasosy {

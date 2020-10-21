@@ -29,9 +29,20 @@
     max-width: 221px;
     min-width: 221px;
     margin-right: 20px;
+    height: 167px;
+    font-size: 0;
+    white-space: normal;
+}
+
+.nasosy-items .product-item .image:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .nasosy-items .product-item .body {
+    padding-top: 24px;
     flex-grow: 1;
 }
 

@@ -21,6 +21,7 @@
     margin-right: 20px;
     height: 111px;
     font-size: 0;
+    white-space: nowrap;
 }
 
 .brand__logo:before {
@@ -92,6 +93,131 @@
     height: 41px;
     font-size: 14px;
     margin-bottom: 0;
+    font-weight: 500;
+}
+
+
+/* brand-id */
+
+.brand-id .brand {
+    display: block;
+}
+
+.brand-id .breadcrumb {
+    margin-bottom: 28px;
+}
+
+.brand-id .brand__about_title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.brand-id .brand__about ul {
+    margin-bottom: 10px;
+}
+
+.select-product-item {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: #235E8F;
+    display: inline-flex;
+    align-items: center;
+}
+
+.select-product-item span {
+    padding-right: 25px;
+}
+
+.brand-id .brand__logo {
+    height: 83px;
+    font-size: 0;
+    white-space: nowrap;
+    margin-bottom: 9px;
+}
+
+.brand-id .brand__logo:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.brand-id .brand__logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.brand-id .nasosy-items .row, .nasosy-items {
+    padding-bottom: 75px;
+}
+
+
+/* instructions */
+
+.instructions__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.instructions__title svg {
+    margin-right: 9px;
+}
+
+.instructions__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom: 17px;
+}
+
+.instructions__item_img {
+    width: 91px;
+    height: 68px;
+    margin-right: 25px;
+    flex-shrink: 0;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.instructions__item_img:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.instructions__item_img img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.instructions__item_download {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.instructions__item_download a {
+    display: flex;
+    align-items: center;
+    color: #235E8F;
+}
+
+.instructions__item_download svg {
+    margin-right: 12px;
+}
+
+.instructions-page .brand__about_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -160,6 +286,64 @@
 
     .brand__about ul {
         margin-bottom: 12px;
+    }
+
+
+    /* brand-id */
+    .brand-id .brand__about_title {
+        position: static;
+    }
+
+    .brand-id .brand__logo {
+        margin-top: 20px;
+        height: 111px;
+    }
+
+    .brand-id .brand__about ul {
+        margin-bottom: 0;
+    }
+
+    .brand__about li:nth-last-child(1),
+    .brand__about li:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+
+    .brand-id .brand {
+        margin-bottom: 20px;
+    }
+
+    .select-product-item {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 23px;
+    }
+
+
+    /* instructions */
+
+    .instructions__item_img {
+        width: 73px;
+        height: 64px;
+        margin-right: 18px;
+    }
+
+    .instructions__item_name {
+        padding-right: 32px;
+    }
+
+    .instructions__item_download span {
+        display: none;
+    }
+
+    .instructions-page .brand__about_title {
+        position: static;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
+    .instructions-page .breadcrumb {
+        display: block;
+        margin-bottom: 13px;
     }
 
 }

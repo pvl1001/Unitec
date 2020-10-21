@@ -78,6 +78,10 @@ a.category-item {
     font-size:0;
 }
 
+.nasosy .w-100 {
+    padding-left: 0;
+}
+
 @media (max-width: 767px) {
 
     .nasosy .container {
