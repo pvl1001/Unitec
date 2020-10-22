@@ -404,15 +404,15 @@
                     <div class="video__content">
                         <div class="video__item">
                             <div class="video__video">
-                                <iframe width="100%" src="https://www.youtube.com/embed/LXb3EKWsInQ"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
                                 <div class="video__video_img">
                                     <img src="img/video-img.png" width="100%"/>
                                     <div></div>
                                 </div>
+                                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                                        frameborder="0"
+                                        allow="accelerometer; muted; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
                             </div>
                             <div class="video__about">
                                 <div class="video__about_date">18.10.2020 12:00</div>
@@ -425,15 +425,15 @@
                         </div>
                         <div class="video__item">
                             <div class="video__video">
-                                <iframe width="100%" src="https://www.youtube.com/embed/LXb3EKWsInQ"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
                                 <div class="video__video_img">
                                     <img src="img/video-img.png" width="100%"/>
                                     <div></div>
                                 </div>
+                                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
                             </div>
                             <div class="video__about">
                                 <div class="video__about_date">18.10.2020 12:00</div>
@@ -446,15 +446,15 @@
                         </div>
                         <div class="video__item">
                             <div class="video__video">
-                                <iframe width="100%" src="https://www.youtube.com/embed/LXb3EKWsInQ"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
                                 <div class="video__video_img">
                                     <img src="img/video-img.png" width="100%"/>
                                     <div></div>
                                 </div>
+                                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
                             </div>
                             <div class="video__about">
                                 <div class="video__about_date">18.10.2020 12:00</div>
@@ -545,6 +545,16 @@
             $( ".search-mobile" ).css( 'display', 'flex' );
             $( '.header-mobile__search svg' ).hide();
         } );
+
+        $('.video__video_img').each(function () { // воспроизведение видео
+            $( this ).click( function () {
+                $( this ).hide()
+                let $video = $(this).next();
+                src = $video.attr( 'src' );
+                $video.attr( 'src', src + '?autoplay=1' );
+            } )
+        })
+
 
 
         if (window.innerWidth <= 767) { // отступ заголовка в адаптиве
