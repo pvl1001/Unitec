@@ -870,14 +870,15 @@ a.btn {
         margin-left: 3px;
     }
 
-    @media (max-width: 340px) {
+}
 
-        .header-mobile__col2 > div:nth-child(1) {
-            margin-right: 15px;
-        }
+@media (max-width: 340px) {
 
-        .header-mobile__col2 > div:nth-child(2) {
-            margin-right: 3px;
-        }
+    .header-mobile__col2 > div:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    .header-mobile__col2 > div:nth-child(2) {
+        margin-right: 3px;
     }
 }
