@@ -217,7 +217,8 @@
 
 .instructions-page .brand__about_title,
 .video-page .brand__about_title,
-.news-page .brand__about_title {
+.news-page .brand__about_title,
+.service-page .brand__about_title {
     font-weight: bold;
     font-size: 24px;
     line-height: 40px;
@@ -226,7 +227,8 @@
 
 .instructions-page .brand__about ul,
 .video-page .brand__about ul,
-.news-page .brand__about ul {
+.news-page .brand__about ul,
+.service-page .brand__about ul {
     margin-bottom: 10px;
 }
 
@@ -548,17 +550,20 @@
     }
 
     .video-page .brand__about:before,
-    .news-page .brand__about:before {
+    .news-page .brand__about:before,
+    .service-page .brand__about:before {
         display: none;
     }
 
     .video-page .brand__about,
-    .news-page .brand__about {
+    .news-page .brand__about,
+    .service-page .brand__about {
         padding-bottom: 0;
     }
 
     .video-page .brand__about_title,
-    .news-page .brand__about_title {
+    .news-page .brand__about_title,
+    .service-page .brand__about_title {
         position: static;
     }
 
