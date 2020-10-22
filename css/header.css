@@ -623,7 +623,8 @@ a.btn {
         padding: 0 7px 0 14px;
     }
 
-    .header-mobile__col1 {
+    .header-mobile__col1,
+    .header-mobile__col1 a {
         display: flex;
         align-items: center;
     }
