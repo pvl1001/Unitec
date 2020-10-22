@@ -2,6 +2,12 @@
     background: transparent;
 }
 
+.category-item {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .category-item .title {
     background: transparent;
     border-radius: 5px;
@@ -32,11 +38,21 @@
     border-radius: 5px;
     padding: 0 8px;
     width: 100%;
+    font-size: 0;
+    white-space: nowrap;
 }
 
 .category-item-wrapp .image {
     display: block;
     margin-bottom: 14px;
+    vertical-align: middle;
+}
+
+.category-item-wrapp .image:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .category-item-wrapp:hover .title {
@@ -53,6 +69,7 @@
 a.category-item {
     display: flex;
     text-decoration: none;
+    position: relative;
 }
 
 .product-list > .product-list__row {
@@ -70,6 +87,7 @@ a.category-item {
     min-height: 45px;
     height: auto;
     padding: 0 10px;
+    white-space: normal;
 }
 
 .category-item .title:after{
@@ -83,6 +101,10 @@ a.category-item {
 }
 
 @media (max-width: 767px) {
+
+    .category-item {
+        width: 100%;
+    }
 
     .nasosy .container {
         width: auto;
