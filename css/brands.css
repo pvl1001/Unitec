@@ -33,6 +33,8 @@
 
 .brand__logo img {
     vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .brand__about {
@@ -214,7 +216,8 @@
 }
 
 .instructions-page .brand__about_title,
-.video-page .brand__about_title {
+.video-page .brand__about_title,
+.news-page .brand__about_title {
     font-weight: bold;
     font-size: 24px;
     line-height: 40px;
@@ -222,7 +225,8 @@
 }
 
 .instructions-page .brand__about ul,
-.video-page .brand__about ul {
+.video-page .brand__about ul,
+.news-page .brand__about ul {
     margin-bottom: 10px;
 }
 
@@ -306,6 +310,75 @@
 
 .video-page .row.nasosy-items {
     padding-bottom: 17px;
+}
+
+
+/* news */
+
+.news__img {
+    width: 410px;
+    height: 273px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 22px;
+    flex-shrink: 0;
+}
+
+.news__item {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.news__item:last-child {
+    margin-bottom: 0;
+}
+
+.news__img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news__about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.news__about_date {
+    font-size: 12px;
+    line-height: 12px;
+    color: #BDBDBD;
+    margin-bottom: 15px;
+}
+
+.news__about_title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    color: #235E8F;
+    margin-bottom: 15px;
+}
+
+.news__about_text {
+    line-height: 18px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.news__about_btn a.btn {
+    height: 41px;
+    font-size: 14px;
+    padding: 0 19px;
+    margin-bottom: 0;
+    float: right;
+}
+
+.news-page .nasosy-items {
+    padding-bottom: 60px;
 }
 
 
@@ -474,21 +547,58 @@
         padding-bottom: 27px;
     }
 
-    .video-page .brand__about:before {
+    .video-page .brand__about:before,
+    .news-page .brand__about:before {
         display: none;
     }
 
-    .video-page .brand__about {
+    .video-page .brand__about,
+    .news-page .brand__about {
         padding-bottom: 0;
     }
 
-    .video-page .brand__about_title {
+    .video-page .brand__about_title,
+    .news-page .brand__about_title {
         position: static;
     }
 
     .video-page .breadcrumb {
         display: block;
         margin-bottom: 13px;
+    }
+
+
+    /* news */
+
+    .news__item {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .news__img {
+        width: 100%;
+    }
+
+    .news__about_text {
+        margin-bottom: 45px;
+    }
+
+    .news__about_btn {
+        text-align: center;
+    }
+
+    .news__about_btn a.btn {
+        float: none;
+    }
+
+    .news__img img {
+        height: 100%;
+        width: auto;
+    }
+
+    .news__block-title {
+        position: absolute;
+        top: 0;
     }
 
 }
