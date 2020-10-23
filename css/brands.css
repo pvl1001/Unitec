@@ -53,11 +53,16 @@
     left: 0;
 }
 
-.brand__about_title {
+.brand__about_title,
+.brand__about_title-mobile {
     line-height: 40px;
     font-weight: bold;
     font-size: 17px;
     color: #235E8F;
+}
+
+.brand__about_title-mobile {
+    display: none;
 }
 
 .brand__about_text {
@@ -391,6 +396,18 @@
     padding-bottom: 60px;
 }
 
+.d-block {
+    display: block !important;
+}
+
+.news__block-title-mobile {
+    display: none;
+}
+
+.service__content {
+    margin-bottom: 89px;
+}
+
 
 @media (max-width: 767px) {
 
@@ -410,8 +427,12 @@
     }
 
     .brand__about_title {
-        position: absolute;
-        top: 0;
+       display: none;
+    }
+
+    .brand__about_title-mobile {
+       display: block;
+        width: 100%;
     }
 
     .brand__about .btn {
@@ -494,6 +515,10 @@
         margin-bottom: 23px;
     }
 
+    .select-product-item svg {
+        display: none;
+    }
+
 
     /* instructions */
 
@@ -513,11 +538,11 @@
 
     .instructions-page .brand__about_title {
         position: static;
-        line-height: 24px;
-        margin-bottom: 12px;
     }
 
-    .instructions-page .breadcrumb {
+    .instructions-page .breadcrumb,
+    .news-page .breadcrumb,
+    .service-page .breadcrumb {
         display: block;
         margin-bottom: 13px;
     }
@@ -547,6 +572,16 @@
         margin-right: 0;
     }
 
+    .video__video_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video__video_img img {
+        width: auto;
+        height: 100%;
+    }
+
     .video__video_img div {
         background-size: 79px;
     }
@@ -563,19 +598,22 @@
 
     .video-page .brand__about:before,
     .news-page .brand__about:before,
-    .service-page .brand__about:before {
+    .service-page .brand__about:before,
+    .instructions-page .brand__about:before {
         display: none;
     }
 
     .video-page .brand__about,
     .news-page .brand__about,
-    .service-page .brand__about {
+    .service-page .brand__about,
+    .instructions-page .brand__about {
         padding-bottom: 0;
     }
 
     .video-page .brand__about_title,
     .news-page .brand__about_title,
-    .service-page .brand__about_title {
+    .service-page .brand__about_title,
+    .instructions-page .brand__about_title {
         position: static;
     }
 
@@ -614,8 +652,11 @@
     }
 
     .news__block-title {
-        position: absolute;
-        top: 0;
+        display: none;
+    }
+
+    .news__block-title-mobile {
+        display: block;
     }
 
 }

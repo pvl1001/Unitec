@@ -629,8 +629,16 @@ a.btn {
     }
 }
 
+a.btn:hover{
+    color: #fff;
+}
+
 
 @media (max-width: 767px) {
+
+    .hr {
+        margin-bottom: 29px;
+    }
 
     .wrapp-col__sidebar {
         background-color: #fff;

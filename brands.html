@@ -308,10 +308,11 @@
             <div class="title">Бренды</div>
 
             <div class="brand">
+                <div class="brand__about_title-mobile">Насосы Lowara</div>
+
                 <div class="brand__logo">
                     <img src="img/Rectangle231.png" />
                 </div>
-
                 <div class="brand__about">
                     <div class="brand__about_title">Насосы Lowara</div>
                     <div class="brand__about_text">
@@ -368,10 +369,10 @@
                 </div>
             </div>
             <div class="brand">
+                <div class="brand__about_title-mobile">Насосы Lowara</div>
                 <div class="brand__logo">
                     <img src="img/Rectangle221.png"/>
                 </div>
-
                 <div class="brand__about">
                     <div class="brand__about_title">Насосы Lowara</div>
                     <div class="brand__about_text">
@@ -504,19 +505,6 @@
             $( ".search-mobile" ).css( 'display', 'flex' );
             $( '.header-mobile__search svg' ).hide();
         } );
-
-
-        if (window.innerWidth <=767 ) { // отступ заголовка в адаптиве
-            let arrTitle = document.querySelectorAll('.brand__about_title')
-            let arrItem = document.querySelectorAll('.brands .brand')
-
-            if(arrItem.length)
-                for(let i = 0; i < arrTitle.length; i++ ) {
-                    let title = arrTitle[i]
-                    let item = arrItem[i]
-                    item.style.paddingTop = title.offsetHeight +'px'
-                }
-        }
     } );
 </script>
 </body>

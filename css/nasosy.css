@@ -40,12 +40,15 @@
     width: 100%;
     font-size: 0;
     white-space: nowrap;
+    display: flex;
+    flex-direction: column;
 }
 
 .category-item-wrapp .image {
     display: block;
     margin-bottom: 14px;
     vertical-align: middle;
+    flex-grow: 1;
 }
 
 .category-item-wrapp .image:before {
@@ -84,9 +87,8 @@ a.category-item {
 }
 
 .category-item .title {
-    min-height: 45px;
     height: auto;
-    padding: 0 10px;
+    padding: 14px 10px;
     white-space: normal;
 }
 

@@ -316,7 +316,7 @@
                     </div>
 
                     <div class="brand__about">
-                        <div class="brand__about_title">Насосы Lowara</div>
+                        <div class="brand__about_title d-block">Насосы Lowara</div>
                         <div class="brand__about_text">
                             Насосы Lowara эффективно используются для обеспечения холодного и горячего водоснабжения
                             коммерческих зданий и объектов ЖКХ, для перекачивания химически неагрессивных жидкостей
@@ -481,29 +481,6 @@
             $( ".search-mobile" ).css( 'display', 'flex' );
             $( '.header-mobile__search svg' ).hide();
         } );
-
-        $('.video__video_img').each(function () { // воспроизведение видео
-            $( this ).click( function () {
-                $( this ).hide()
-                let $video = $(this).next();
-                src = $video.attr( 'src' );
-                $video.attr( 'src', src + '?autoplay=1' );
-            } )
-        })
-
-
-
-        if (window.innerWidth <= 767) { // отступ заголовка в адаптиве
-            let arrTitle = document.querySelectorAll( '.body .title' )
-            let arrItem = document.querySelectorAll( '.brand-id .product-item' )
-
-            if (arrItem.length)
-                for (let i = 0; i < arrTitle.length; i++) {
-                    let title = arrTitle[i]
-                    let item = arrItem[i]
-                    item.style.paddingTop = title.offsetHeight + 10 + 'px'
-                }
-        }
     } );
 </script>
 </body>
