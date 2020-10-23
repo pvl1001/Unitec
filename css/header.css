@@ -393,6 +393,13 @@ a.btn {
 
 .item__img {
     margin-right: 18px;
+    height: 167px;
+    min-width: 36.3%;
+}
+
+.item__img img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .item__text {
@@ -422,7 +429,7 @@ a.btn {
     color: #235E8F;
     font-weight: 600;
     font-size: 14px;
-    width: 161px;
+    max-width: 161px;
 }
 
 .section-1 {
@@ -443,6 +450,23 @@ a.btn {
 
 .item-brand__img {
     margin-right: 28px;
+    width: 31.5%;
+    height: 91px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.item-brand__img:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-brand__img img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
 }
 
 .item-brand__item_title {
@@ -572,6 +596,7 @@ a.btn {
 
 .content {
     display: initial;
+    height: 100%;
 }
 
 .w-100 {
@@ -595,6 +620,15 @@ a.btn {
 .brand__about .active {
     color: #000;
 }
+
+
+@media (max-width: 1023px) {
+
+    .footer ul {
+        height: auto;
+    }
+}
+
 
 @media (max-width: 767px) {
 
@@ -774,9 +808,17 @@ a.btn {
         margin-bottom: 0;
     }
 
+    .item-brand__img {
+        height: auto;
+    }
+
     .item-brand__img img {
         width: 227px !important;
         height: auto !important;
+    }
+
+    .about__img {
+        width: 100%;
     }
 
     .about__img img {
@@ -842,15 +884,16 @@ a.btn {
     }
 
     .about__img {
-        margin: 0 -14px;
+        margin: 0;
     }
 
     .about__text {
-        padding-top: 24px;
+        /*padding-top: 24px;*/
+        padding: 24px 14px 0;
     }
 
     .section-3.about {
-        margin-bottom: 40px;
+        margin: 0 -14px 40px;
     }
 
     .sidebar {

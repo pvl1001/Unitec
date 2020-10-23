@@ -43,9 +43,9 @@
 
 .nasosy-items .product-item .body {
     padding-top: 24px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .nasosy-items .product-item .body .text {
