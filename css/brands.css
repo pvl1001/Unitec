@@ -408,6 +408,10 @@
     margin-bottom: 89px;
 }
 
+.select-product-item svg {
+    display: none;
+}
+
 
 @media (max-width: 767px) {
 
@@ -513,10 +517,6 @@
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 23px;
-    }
-
-    .select-product-item svg {
-        display: none;
     }
 
 
